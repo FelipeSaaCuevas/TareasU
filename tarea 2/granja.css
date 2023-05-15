@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    background-image: url(fondo/granja.PNG);
+    background-size: cover;
+}
+.borones{
+    height: 100px;
+    height: 100px;
+    opacity: 40%;
+}
+.caballo{
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: 50%;
+}
+.flecha2{transform: rotate(180deg);}

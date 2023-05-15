@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    background-image: url(fondo/cerro.jpg);
+    background-repeat: no-repeat;/*para que la imagen de fondo no se repita*/
+    background-size: cover/*el cover es cubrir todo*/;/**/
+}
+.puma{
+    left: -100%;
+    top: -100%;
+}

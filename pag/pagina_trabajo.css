@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    font-family: "Roboto";s
+}
+.cavesera{
+    background-color: blue;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 0%;/*se usa el top para fijar el bloque*/
+}
+.cuerpo-de-la-noticia{
+    background-color: gold;
+    height: 1110px;
+    width: 85%;
+    border: 5px solid black;
+    padding: 10px;
+    
+}
+.adentro{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top
+    padding: 10px;
+    
+}
+.trailer{
+    padding: 40px;
+}
+    
+    
