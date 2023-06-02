@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina de graficos economicos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="moneda">
+    <select id="monedas">
+        <option value="UF" id="UF"></option>
+        <option value="DolarO" id="DolarO"></option>
+        <option value="DolarA" id="DolarA"></option>
+        <option value="Euro" id="Euro"></option>
+        <option value="IPC" id="IPC"></option>
+        <option value="UTM" id="UTM"></option>
+        <option value="IVP" id="IVP"></option>
+        <option value="Imacec" id="Imacec"></option>
+    
+    </select>
+    <div class="graficos">
+        <h1>monedas</h1>
+        <canvas id="myChart" width="400" height="300"></canvas>
+    </div>
+</div>
+
+
+    <script src="api-moneda.js"></script>
+<script>
+    const ctx = document.getElementById("myChart").getContext('2d');
+    let myChart= new chart(ctx,{
+        type: 'bar',
+    data: {
+      labels: ["UF", "DolarO", "DolarA", "Euro", 'Purple', 'Orange'],
+      datasets: [{
+        label: 'monedas',
+        data: [12, 19, 3, 5, 2, 3],
+        background-color: [rgb(0, 0, 0)]
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+    }
+    );
+</script>
+
+</body>
+</html>
